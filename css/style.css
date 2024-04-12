@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+@font-face{
+    src:url('../fonts/OpenSans-Light.ttf');
+    font-family: "Open Sans";
+}
+
+html,body{
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+.sidebar{
+    width:20%;
+    height: 100%;
+    position: fixed;
+    background-color: #512679;
+}
+
+.sidebar-pos{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.img-sidebar{text-align: center;}
+
+.img-sidebar img{
+    width: 70%;
+    border:8px solid #62318e;
+    border-radius: 50%;
+}
+
+.menu{
+    margin:20px 0;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    opacity: 0.4;
+    font-size: 18px;
+    font-weight: ;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    opacity: 0.8;
+}
+
+.menu .weight{
+    font-size: 16px;
+}
+
+.menu a.selected{
+    opacity: 1;
+}
+
+.content{
+    position:absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow-y:auto;
+    padding:0 3%;
+}
+
+section.descricao{
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+    padding: 30px;
+    background-color: #ddd;
+    border-radius: 30px;
+    border: 2px solid #62318e;
+}
+
+section.descricao h2{
+    color:#343a40;
+    font-size: 30px;
+    width: 75%;
+}
+
+section.descricao h2 > span,
+section.descricao h3 > span
+{
+    color:  #62318e;
+}
+
+section.descricao h3{
+    margin:15px 0 30px 0;
+    color: #57595c;
+    font-size: 18px;
+    width: 75%;
+}
+
+section.descricao p{
+    color:#585858;
+    font-size:16px;
+    font-weight: bold;
+    margin-top:25px;
+}
+
+.icons-social{
+    margin-top:20px;
+}
+
+.icons-social a:hover{
+    width:42px;
+    height:42px;
+    background-color: #510f8d;
+}
+
+.icons-social a{
+    text-decoration:none;
+    color: white;
+    background-color:#62318e;
+    width:40px;
+    height:40px;
+    border-radius:20px;
+    display: inline-block;
+    margin:0 10px;
+    text-align: center;
+}
+
+.icons-social i{
+    line-height:40px;
+}
