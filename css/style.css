@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Montserrat";
+}
+
+html, body{
+    height: 100%;
+    background-color: white;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/font/BebasNeue-Regular.ttf");
+}
+
+header{
+    width: 100%;
+    height: 430px;
+    background-color: rgb(8, 25, 83);
+    /* background: linear-gradient(180deg, rgba(233, 233, 255, 0.568), white 5000px); */
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, blue, rgb(0, 225, 255)) 1;
+}
+
+.center{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.header-image img{
+    width: 200px;    
+    border: 0;
+    border-radius: 100%;
+}
+
+.header-text h1{
+    color: white;
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.header-text h2{
+    color: white;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+section{
+    background: linear-gradient(180deg, rgba(239, 239, 255, 0.568), white 5000px);
+    width: 100%;
+    height: 910px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+section div{
+    display: inline-block;
+}
+/*
+    -----------> SEÇÃO LEFT HIGH <------------
+*/
+section .main-left{
+    width: 30%;
+    margin: 50px auto;
+}
+
+.main-left .high{
+    width: 75%;
+    text-align: justify;
+}
+
+.main-left .high h2{
+    margin-left: -30px;
+    color: rgb(22, 50, 143);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.main-left .text-under i{
+    margin-bottom: 10px;
+}
+
+.main-left .text-under p, a{
+    font-size: 23px;
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+}
+/*
+    -----------> SEÇÃO LEFT MID <------------
+*/
+.main-left .mid{
+    margin-top: 50px;
+    width: 75%;
+    text-align: justify;
+}
+
+.main-left .mid h2{
+    margin-left: -30px;
+    color: rgb(22, 50, 143);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.main-left .mid .first-mid{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-left .mid .first-mid h3{
+    color: rgb(51, 51, 51);
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.main-left .mid .first-mid p{
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    font-weight: 500;
+}
+/*
+    -----------> SEÇÃO RIGHT HIGH <------------
+*/
+section .main-right{
+    padding: 50px;
+    /* border-left: 1px solid black; */
+    width: 60%;
+}
+
+.main-right .high{
+    width: 90%;
+    text-align: justify;
+}
+
+.main-right .high h2{
+    margin-left: -30px;
+    color: rgb(22, 50, 143);
+    font-size: 35px;
+}
+
+.main-right .high p{
+    margin-top: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+}
+/*
+    -----------> SEÇÃO RIGHT MID <------------
+*/
+.main-right .mid{
+    margin-top: 50px;
+    width: 90%;
+    text-align: justify;
+}
+
+.main-right .mid h2{
+    margin-left: -30px;
+    color: rgb(22, 50, 143);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.main-right .mid .first-mid{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-right .mid .first-mid h3{
+    color: rgb(51, 51, 51);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.main-right .mid .first-mid p{
+    margin-top: 10px;
+    width: 500px;
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.main-right .mid .first-mid button{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to left, blue, rgb(150, 0, 236));
+    border: 0;
+    border-radius: 12px;
+    width: 110px;
+    height: 37px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main-right .mid .first-mid button:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, rgb(5, 5, 160),rgb(106, 5, 165));
+    width: 110px;
+    height: 37px;
+}
+/*
+    -----------> SEÇÃO ICONES <------------
+*/
+.fab{
+    color: black;
+    font-size: 22px;
+}
