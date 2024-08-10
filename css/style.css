@@ -17,7 +17,7 @@ html, body{
 
 header{
     width: 100%;
-    height: 380px;
+    height: 290px;
     background: linear-gradient(to left, rgb(5, 41, 158),rgb(5, 20, 71));
     /* border-bottom: 3px solid;
     border-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)) 1; */
@@ -31,15 +31,15 @@ header{
 }
 
 .center{
-    max-width: 700px;
     margin: 0 auto;
     padding-top: 40px;
     text-align: center;
+    display: flex;
 }
 
 .header-image{
-    position: relative;
-    display: inline-block;
+    margin-left: 150px;
+    width: 20%;
 }
 
 .header-image img{
@@ -49,7 +49,7 @@ header{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-.header-image::before {
+/* .header-image::before {
     content: '';
     position: absolute;
     top: 0;
@@ -59,16 +59,21 @@ header{
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 90%);
     border-radius: 100%;
     pointer-events: none;
+} */
+
+.header-text{
+    margin-top: 50px;  
+    width: 30%;
+    text-align: left;
 }
 
 .header-text h1{
     color: rgb(255, 255, 255);
     margin-top: 10px;
     font-weight: 100;
-    font-size: 50px;
+    font-size: 55px;
     text-transform: uppercase;
     text-shadow: 0 0 17px rgb(0, 0, 0, 0.5);
-
 }
 
 .header-text h2{
@@ -84,6 +89,29 @@ header{
     font-size: 17px;
 }
 
+
+.header-right-icons{
+    /* z-index: 10000; */
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.header-right-icons i{
+    color: white;
+    font-size: 25px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.edit1{
+    cursor: pointer;
+    transition: 0.4s ease;
+    position: absolute;
+    top: 290px; /* Ajuste a posição vertical */
+    left: 47%; /* Ajuste a posição horizontal */
+}
+
 .edit1 p{
     color: rgb(8, 25, 83);
     margin-top: 10px;
@@ -93,11 +121,6 @@ header{
 
 .edit1 i{
     color: rgb(8, 25, 83);
-}
-
-.edit1{
-    cursor: pointer;
-    transition: 0.4s ease;
 }
 
 .edit1:hover{
@@ -152,7 +175,10 @@ section .main-left{
 .main-left .text-under p:hover{
     background: linear-gradient(to left, blue, rgb(150, 0, 236));
     background-clip: text;
-    -webkit-text-fill-color: transparent; font-size: 20px; margin-left: 10px; font-weight: 200;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 200;
     transform: scale(1.2);
 }
 /*
@@ -270,7 +296,7 @@ section .main-right{
 /*
     -----------> SEÇÃO ICONES <------------
 */
-.fab{
+.text-under .fab{
     color: black;
     font-size: 22px;
 }
