@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Montserrat";
+}
+
+html, body{
+    height: calc(100% + 100px);
+    background-color: white;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/BebasNeue-Regular.ttf");
+}
+
+header{
+    width: 100%;
+    height: 380px;
+    background: linear-gradient(to left, rgb(5, 41, 158),rgb(5, 20, 71));
+    /* border-bottom: 3px solid;
+    border-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)) 1; */
+    border-bottom: 7px solid;
+    border-image: linear-gradient(to right, rgb(6, 47, 180),rgb(4, 18, 63)) 1;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    transition: top 0.7s;
+    z-index: 1000;
+}
+
+.center{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.header-image{
+    position: relative;
+    display: inline-block;
+}
+
+.header-image img{
+    width: 200px;    
+    border: 0;
+    border-radius: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97.8%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 90%);
+    border-radius: 100%;
+    pointer-events: none;
+}
+
+.header-text h1{
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 0 0 17px rgb(0, 0, 0, 0.5);
+
+}
+
+.header-text h2{
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 19px;
+}
+
+.header-text p{
+    color: white;
+    font-weight: 100;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.edit1 p{
+    color: rgb(8, 25, 83);
+    margin-top: 10px;
+    font-size: 18px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit1 i{
+    color: rgb(8, 25, 83);
+}
+
+.edit1{
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.edit1:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+section{
+    padding-top: 150px;
+    background: linear-gradient(180deg, rgba(239, 239, 255, 0.568), white 5000px);
+    width: 100%;
+    height: 110%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+section div{
+    display: inline-block;
+}
+/*
+    -----------> SEÇÃO LEFT HIGH <------------
+*/
+section .main-left{
+    width: 80%;
+    margin: 50px 120px;
+}
+
+.main-left .high{
+    width: 75%;
+    text-align: justify;
+}
+
+.main-left .high h2{
+    margin-left: -30px;
+    color: rgb(22, 50, 143);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.main-left .text-under i{
+    margin-bottom: 10px;
+}
+
+.main-left .text-under p, a{
+    font-size: 23px;
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.main-left .text-under p:hover{
+    background: linear-gradient(to left, blue, rgb(150, 0, 236));
+    background-clip: text;
+    -webkit-text-fill-color: transparent; font-size: 20px; margin-left: 10px; font-weight: 200;
+    transform: scale(1.2);
+}
+/*
+    -----------> SEÇÃO LEFT MID <------------
+*/
+.main-left .mid{
+    margin-top: 50px;
+    width: 75%;
+    text-align: justify;
+}
+
+.main-left .mid h2{
+    margin-left: -30px;
+    color: rgb(22, 50, 143);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.main-left .mid .first-mid{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-left .mid .first-mid h3{
+    color: rgb(51, 51, 51);
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.main-left .mid .first-mid p{
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    font-weight: 500;
+}
+/*
+    -----------> SEÇÃO RIGHT HIGH <------------
+*/
+section .main-right{
+    padding: 50px;
+    /* border-left: 1px solid black; */
+    width: 100%;
+}
+
+.main-right .high{
+    width: 90%;
+    text-align: justify;
+}
+
+.main-right .high h2{
+    margin-left: -30px;
+    color: rgb(22, 50, 143);
+    font-size: 35px;
+}
+
+.main-right .high p{
+    margin-top: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    width: 85%;
+}
+/*
+    -----------> SEÇÃO RIGHT MID <------------
+*/
+.main-right .mid{
+    margin-top: 50px;
+    width: 90%;
+    text-align: justify;
+}
+
+.main-right .mid h2{
+    margin-left: -30px;
+    color: rgb(22, 50, 143);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.main-right .mid .first-mid{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-right .mid .first-mid h3{
+    color: rgb(51, 51, 51);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.main-right .mid .first-mid p{
+    margin-top: 10px;
+    width: 500px;
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.main-right .mid .first-mid button{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    background: rgb(22, 50, 143);
+    border: 0;
+    border-radius: 12px;
+    width: 110px;
+    height: 37px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: 0.4s ease;
+}
+
+.main-right .mid .first-mid button:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, blue,rgb(150, 0, 236));
+    transform: scale(1.15);
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+}
+/*
+    -----------> SEÇÃO ICONES <------------
+*/
+.fab{
+    color: black;
+    font-size: 22px;
+}
