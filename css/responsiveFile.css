@@ -1,7 +1,305 @@
-/* 
-
-@media screen and (max-width: 1500px){
-
+@media screen and (max-height: 900px){
+    section{
+        height: calc(100% + 100px);
+    }
 } 
-    MANUNTENÇÃO!
-*/
+@media screen and (max-height: 850px){
+    section{
+        height: calc(100% + 180px);
+    }
+} 
+@media screen and (max-height: 800px){
+    section{
+        height: calc(100% + 230px);
+    }
+} 
+@media screen and (max-height: 750px){
+    section{
+        height: calc(100% + 290px);
+    }
+}
+@media screen and (max-height: 680px){
+    section{
+        height: calc(100% + 350px);
+    }
+}
+@media screen and (max-height: 560px){
+    section{
+        height: 160%;
+    }
+}
+@media screen and (max-width: 1400px){
+    .center div{
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    .center .header-text{
+        flex-grow: 2;
+    }
+    .center .header-image, .header-right-icons{
+        flex-grow: 1;
+        min-width: 100px; 
+        max-width: 200px;
+    }
+    .header-text{
+        position: relative;
+        left: 20px;
+        width: 40%;
+    }
+    .header-right-icons{
+        position: relative;
+        right: 100px;
+    }
+    .main-right .mid .first-mid span{
+        font-size: 22px;
+    }
+} 
+@media screen and (max-width: 1250px){
+    header{
+        height: 270px;
+    }
+    .header-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .header-image img{
+        width: 150px;
+    }
+    .header-text{
+        width: 50%;
+    }
+    .header-text h1{
+        font-size: 45px;
+    }
+    .header-text h2{
+        font-size: 19px;
+    }
+    .main-left .mid {
+        width: 80%;
+    }
+    .header{
+        height: 250px;
+    }
+    .center .header-text {
+        flex-grow: 3;
+    }
+    .edit1{
+        top: 270px;
+    }
+}
+@media screen and (max-width: 1190px){
+    .header{
+        height: 250px;
+    }
+    .center .header-text {
+        flex-grow: 3;
+    }
+}
+@media screen and (max-width: 1130px){
+    section .main-left {
+        margin: 50px 80px;
+    }
+}
+@media screen and (max-width: 1070px){
+    .header-text h2{
+        width: 400px;
+    }
+    .header-text{
+        left: 40px;
+    }
+    .header-right-icons{
+        right: 140px;
+    }
+    .header-right-icons i{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1049px){
+    html{
+        overflow-x: hidden;
+    }
+    header{
+        height: 290px;
+    }
+    section{
+        display: inline-block;
+        height: calc(100% + 420px);
+    }
+    section .main-left{
+        width: 100%;
+        margin: 50px 60px;
+    }
+    .main-left .high{
+        vertical-align: top;
+        width: 20%;
+        text-align: left;
+    }
+    .main-left .high h2{
+        margin-left: 0;
+        color: rgb(22, 50, 143);
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .edit1{
+        top: 220px;
+    }
+    .edit1 p, .edit1 i{
+        color: white;
+    }
+    .main-left .mid{
+        vertical-align: top;
+        margin-top: 0;
+        margin-right: 20px;
+        width: 29%;
+    }
+    .main-left .mid .first-mid p{
+        width: 70%;
+    }
+    .main-left .mid h2{
+        margin-left: 0;
+    }
+    section .main-right{
+        padding: 50px;
+        width: 100%;
+    }
+    .main-right .high{
+        vertical-align: top;
+        width: 49%;
+        text-align: justify;
+    }
+    .main-right .high h2{
+        margin-left: 0;
+        color: rgb(22, 50, 143);
+        font-size: 35px;
+    }
+    .main-right .high p{
+        margin-top: 20px;
+        color: rgb(51, 51, 51);
+        font-size: 22px;
+        width: 85%;
+    }
+    .main-right .mid{
+        margin-top: 0;
+        width: 40%;
+        text-align: justify;
+    }
+    .main-right .mid h2{
+        margin-left: 0;
+        color: rgb(22, 50, 143);
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .main-right .mid .first-mid{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-right .mid .first-mid h3{
+        color: rgb(51, 51, 51);
+        font-size: 28px;
+        font-weight: 600;
+        width: 94%;
+    }
+    .main-right .mid .first-mid p{
+        margin-top: 10px;
+        width: 95%;
+        color: rgb(51, 51, 51);
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 990px){
+    header{
+        height: 230px;
+    }
+    .edit1{
+        top: 170px;
+    }
+    .center{
+        margin: 0 auto;
+        padding-top: 0;
+        text-align: center;
+        display: flex;
+        gap: 10px;
+    }
+    section{
+        padding: 150px 100px 0 100px;
+        height: calc(100% + 420px);
+    }
+    .header-right-icons{
+        display: none;
+    }
+    .main-left .mid{
+        width: 48%;
+        padding: 20px;
+    }
+    .main-left .high{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    /* .main-left .high .text-under{
+        text-align: left;
+    } */
+    .main-left .mid .first-mid p{
+        width: 80%;
+    }
+    section .main-left{
+        width: 90%;
+    }
+    .main-left .mid-skill{
+        margin: 0;
+        padding: 20px;
+        width: 48%;
+        text-align: left;
+    }
+    .main-left .mid-skill .first-mid p{
+        width: 100%;
+    }
+    /* SEÇÃO RIGHT */
+    section .main-right{
+        padding: 50px;
+        width: 100%;
+    }
+    .main-right .high{
+        padding: 20px;
+        margin-right: 20px;
+        width: 51%;
+        position: relative;
+        top: -60px;
+    }
+    .main-right .mid{
+        width: 42%;
+        position: relative;
+        top: -180px;
+    }
+    .main-right .mid .first-mid{
+        width: 120%;
+    }
+    .main-right .mid .first-mid h3{
+        width: 100%;
+    }
+    .main-right .mid .first-mid p{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px){
+    .main-left .mid .first-mid p{
+        width: 100%;
+    }
+    .main-left .mid .first-mid h3{
+        width: 150%;
+    }
+    .main-right .high p{
+        width: 110%;
+    }
+    .main-right .high{
+        margin-right: 50px;
+    }
+    .main-right .mid{
+        width: 39%;
+        position: relative;
+        top: -180px;
+    }
+}
